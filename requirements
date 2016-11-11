@@ -1,0 +1,54 @@
+For this coding assignment we will be using the guest book idea again, but this time, we will be incorporating authentication to ensure that only people
+ with user accounts are able to leave comments on our site.
+
+Guest Book/Comment Assignment
+
+
+Do this: Main index.php should display:
+
+    (if logged in, show comments, if not logged in, show message no comments with option to create comment)
+    /5 The current (if any) comments. If no comments, show a message that there are no comments at this time, (if intermediate option below) show a link to register a new account.
+
+    (if not logged in, display form to allow login, and allow new comment (title, message, username, date-time);
+    /5 If the user is not logged in, there should be a form that will allow them to enter a username and password. If the user has entered a valid username and password, we will
+     allow them to add a new comment. A comment must contain these data pieces: a title, a message, the logged-in username, and a date-time stamp.
+
+Make sure:
+
+    /5 the user does not add a blank comment
+    /5 For DB option - fields should be sanitized and safe
+    /3 there are no orphan pages - in other words, all pages have links
+    /5 code is tidy and commented (all pages) throughout your site
+    /10 main index page has a banner with some color and a site title - there should be at least 5 instances of css used on the page (padding, margin, font-style, div, color... etc)
+    /2 There should be no PHP NOTICE or WARNINGS when I run your page - only if you absolutely have to - use the directive error_reporting(); to set the appropriate error warning
+    level for your page.
+
+      /40 sub-total
+
+Now choose ONE of the following options to continue your adventure:
+
+    /20 Basic - Choosing this solution, for a maximum of 60% on this assignment, you will hard code the correct username and password in your PHP file to compare with the values the
+    user attempts to log in with, rather than storing them in a database table. You will also store the comments in a flat-file (text file) rather than in a database table.
+
+    /35 Intermediate - Choosing this solution for a maximum of 75%, you will provide the ability to register new user accounts and store user credentials in a database table.
+     We will also store comments in a database table INSTEAD of the text file. You will need to design and create the simple database and tables and provide the file (.sql) to create.
+     See requirements section below for database details. You must use the $_SESSION to manage the login and logout process. Your script should not rely on using 'root' to login.
+
+Ear-Regardless (kidding, don't ya hate that) of your choice above (Basic or Intermediate), and you think you have what it takes, tackle some options in the advanced requirement category:
+
+    /5 Include a CAPTCHA system for user registration.
+    /5 Implement a WYSIWYG editor such as CKEDITOR when the user adds or edits a comment.
+    /15 Allow the user to edit and delete their own comments. If going this route, only logged in users should be able to edit and delete their comments. As well, they should only be able to
+    edit and delete their own comments.
+
+
+
+PLEASE SUBMIT
+
+Any files needed to run this application, as well as instructions if required. In a sense, you will be deploying this web application to a remote host (my workstation).
+Regarding the MySQL database (if choosing Intermediate), you need to provide me with an SQL file to:
+
+    create a database
+    create any required tables
+    create a user to access this database with appropriate rights (this was db2288_user in the example I provided)
+    insert any initially required data
